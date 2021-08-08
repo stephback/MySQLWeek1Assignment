@@ -1,0 +1,8 @@
+mysql> SELECT * FROM employees WHERE birth_date < '1965-01-01';
+mysql> SELECT * FROM employees WHERE hire_date > '1990-12-31';
+mysql> SELECT first_name, last_name FROM employees WHERE last_name LIKE 'F%' LIMIT 50;
+mysql> INSERT INTO employees VALUES(100, '1977-09-21', 'Paul', 'Blart', 'M', '2000-02-09'), (101, '1972-09-27', 'Randy', 'Savage', 'M', '2003-07-15'), (102, '1966-09-28', 'Patrick', 'Stewart', 'M', '2004-04-17');
+mysql> UPDATE employees SET first_name = 'Bob' WHERE emp_no = 10023;
+mysql> UPDATE employees SET hire_date = '2002-01-01' WHERE first_name LIKE 'P%' OR last_name LIKE 'P%';
+mysql> DELETE FROM employees WHERE emp_no < 10000;
+mysql> DELETE FROM employees WHERE emp_no IN (10048, 10099, 10234, 20089);
